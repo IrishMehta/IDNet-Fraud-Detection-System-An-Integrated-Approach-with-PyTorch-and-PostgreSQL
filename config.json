@@ -31,9 +31,9 @@
     "huggingface": {
       "HF_FOLDER_PATH":        "fraud_detection_hf",
       "MODEL_WEIGHTS_PATH":    "fraud_detection_model.pth",
-      "HF_WRITE_TOKEN":        "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",
+      "HF_WRITE_TOKEN":        "token_id",
       "HF_REPO_NAME":          "IrishMehta/fraud-detection-idnet-two-class",
-      "HF_READ_TOKEN":         "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",
+      "HF_READ_TOKEN":         "token_id",
       "INFERENCE_IMAGE_PATH":  "/path/to/a/sample.png"
     }
   }
