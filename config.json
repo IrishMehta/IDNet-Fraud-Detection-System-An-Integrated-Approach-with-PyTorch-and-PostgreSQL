@@ -1,0 +1,40 @@
+{
+    "data_prep": {
+      "IDIMAGE_CSV":    "./data_files/idimage.csv",
+      "IDMETA_CSV":     "./data_files/idmeta.csv",
+      "IDLABEL_CSV":    "./data_files/idlabel.csv",
+      "EXTRACTED_DIR":  "extracted_images",
+      "DATASET_DIR":    "dataset",
+      "OOS_RATIO":      0.10,
+      "TEST_RATIO":     0.067,
+      "RANDOM_STATE":   42
+    },
+  
+    "hpo": {
+      "TRAIN_DIR":    "./dataset/train",
+      "VAL_RATIO":    0.1,
+      "NUM_CLASSES":  2,
+      "NUM_EPOCHS":   30,
+      "N_TRIALS":     5,
+      "OUTPUT_DIR":   "hpo_output"
+    },
+  
+    "training": {
+      "TRAIN_DIR":           "./dataset/train",
+      "TEST_DIR":            "./dataset/test",
+      "OUT_OF_SAMPLE_DIR":   "./dataset/out_of_sample_test",
+      "VAL_RATIO":           0.1,
+      "BEST_MODEL_PATH":     "best_model.pth",
+      "OUTPUT_DIR":          "training_output"
+    },
+  
+    "huggingface": {
+      "HF_FOLDER_PATH":        "fraud_detection_hf",
+      "MODEL_WEIGHTS_PATH":    "fraud_detection_model.pth",
+      "HF_WRITE_TOKEN":        "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",
+      "HF_REPO_NAME":          "IrishMehta/fraud-detection-idnet-two-class",
+      "HF_READ_TOKEN":         "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",
+      "INFERENCE_IMAGE_PATH":  "/path/to/a/sample.png"
+    }
+  }
+  

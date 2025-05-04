@@ -230,7 +230,7 @@ def train_and_evaluate(cfg: dict):
 
 def main():
     cfg = load_config(Path(__file__).parent / 'config.json')
-    train_and_evaluate(cfg)
+    train_and_evaluate(cfg['training'])
 
 
 if __name__ == '__main__':
